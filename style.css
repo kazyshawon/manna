@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.playbtn{
+    position: relative;
+    height:auto;
+    width: 600px;
+    margin-left: ;
+}
+.playbtn img{
+    height:auto;
+    width: 600px;
+}
+.playbtn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #111;
+    transition: .7s;
+    
+}
+.playbtn:hover::before{
+    width: 0;
+    transition: .7s;
+}
+.playbtn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #111;
+    transition: .7s;
+}
+.playbtn:hover::after{
+    width: 0;
+    transition: .7s;
+}
